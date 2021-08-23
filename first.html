@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PlayEvery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://use.fontawesome.com/09901d9403.js"></script>
+ <style>
+ 
+										
+
+					#sidenav {
+					  height: 100%;
+					  width:200px;
+					  position: fixed;
+					  z-index: 1;
+					  top: 0;
+					  left: 0;
+					  background: #111;
+					  overflow-x: hidden;
+					  padding-top: 20px ;
+					}
+					#sidenav a {
+					  padding: 6px 8px 6px 16px;
+					  text-decoration: none;
+					  
+					  color: #818181;
+					  display: block;
+					}
+					  #sidenav a:hover {
+					  color: #f1f1f1;
+					}
+					#search-field{
+					   width:500px;
+					   }
+					   
+					   
+					   
+					   
+					#main-block{
+						margin-left:220px;
+						}	
+						
+						
+						
+					.nav-item.dropdown{
+						display:none;
+						}
+						
+
+
+						
+					@media screen and (max-height: 650px) {
+						  #sidenav {padding-top: 15px;}
+						  #sidenav a {font-size: 18px;}
+						  #sidenav {
+										display: none;
+									  }
+									  
+						  #main-block{
+							 margin-left:0px;
+							 width:100%;
+							 
+							}
+						  #search-field{
+							   width:100%
+							   }
+							
+						  .nav-item.dropdown{
+									display:block;
+									background-color:gray;
+									color:white;
+									}
+							.nav-item{
+									display:block;
+									background-color:gray;
+									color:red;
+									}		
+					}
+									
+									
+		</style>
+ </head>
+  <body>
+      <div class="container-fluid">
+	     <div class="row">
+		 <!-- left sidebar-->
+		    <div class="col-sm-2" id="sidenav" style="height:100vh ; background-color:black;">
+			   <table class="table table-borderless">
+			   <tr><td><img src="pic/user.jpg" class="img-fluid rounded-circle"></td></tr>
+			   <tr><td align=center><b style="color:white">User Name</b></td></tr>
+			   </table>
+			   <table class="table table-borderless">
+			   <tr><td><a href="#" style="color:white">Channel</a></td></tr>
+			   <tr><td><a href="#" style="color:white">History</a></td></tr>
+			   <tr><td><a href="#" style="color:white">Music</a></td></tr>
+			   <tr><td><a href="#" style="color:white">Sports</a></td></tr>
+			   <tr><td><a href="#" style="color:white">Movies</a></td></tr>
+			   <tr><td><a href="#" style="color:white">Coding</a></td></tr>
+			   
+			   </table>
+			  </div>
+			  <!-- End left sidebar-->
+			  <!-- main block-->
+			  <div class="col-sm-10" id="main-block" >
+			      <div class="row">
+				   <div class="col-sm-12">
+					 <nav class="navbar navbar-expand-md " style="background-color:gray; color:white">
+						  <!-- Brand -->
+						  <a class="navbar-brand" href="#">PlayEvery</a>
+
+						  <!-- Toggler/collapsibe Button -->
+						  <button class="navbar-toggler" type="button" data-toggle="collapse" style="background color:white" data-target="#collapsibleNavbar">
+							<span class="navbar-toggler-icon" style="color:white"></span>
+						  </button>
+
+						  <!-- Navbar links -->
+						  <div class="collapse navbar-collapse " id="collapsibleNavbar" style="background-color:gray;color:white">
+							<ul class="navbar-nav ">
+							  <li class="nav-item ">
+								<a class="nav-link" href="#">Sport</a>
+							  </li>
+							  <li class="nav-item">
+								<a class="nav-link" href="#">Music</a>
+							  </li>
+							  <li class="nav-item">
+								<a class="nav-link" href="#">Movie</a>
+								</li>
+								<li class="nav-item">
+								<a class="nav-link" href="#">Coding</a>
+								</li>
+								<ul class="nav-item" id="search-field">
+								 
+								<input class="form-control me-auto" placeholder="search...">
+								 
+								</ul>
+								<li class="nav-item dropdown">
+					  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+						Dropdown link
+					  </a>
+									  <div class="dropdown-menu" style="background-color:pink;color:white">
+						<a class="dropdown-item" href="#">Channel</a>
+						<a class="dropdown-item" href="#">History</a>
+						<a class="dropdown-item" href="#">Music</a>		
+                        <a class="dropdown-item" href="#">Sports</a>		
+                        <a class="dropdown-item" href="#">Movies</a>
+						<a class="dropdown-item" href="#">Coding</a>		
+						
+						</div>
+						</li>
+						</ul>
+						</div>
+						 </nav>
+			    </div>
+				<!-- Content-->
+				  <div class="col-sm-12" id="content" style="margin-top:10px">
+				   <div class="row">
+				    <div class="col-sm-8">
+				   <img src="pic/1.jpg" style="height:550px;" class="img-fluid">
+				   </div>
+				   <div class="col-sm-4">
+				   <img src="pic/ad.jpg" style="height:550px;" class="img-fluid">
+			  </div>
+			  </div>
+			  
+			  <div class="row">
+			  <!-- sports-->
+			    <div class="col-sm-12" style="background-color:#f5f5f5; margin-top:10px">
+				  <h2>Sports</h2>
+				  </div>
+				  
+				  <div class="col-sm-12">
+				  
+				   <div id="sports" class="carousel slide" data-ride="carousel">
+
+								  <!-- Indicators 
+								  <ul class="carousel-indicators">
+									<li data-target="#sports" data-slide-to="0" class="active"></li>
+									<li data-target="#sports" data-slide-to="1"></li>
+									<li data-target="#sports" data-slide-to="2"></li>
+									<li data-target="#sports" data-slide-to="3"></li>
+								  </ul> -->
+
+								  <!-- The slideshow -->
+								  <div class="carousel-inner">
+									<div class="carousel-item active">
+									<div class="row">
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4" >
+									<tr><td align=center style="height:160px"><img src="pic/s1.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>01/08/2021</td></tr>
+									</table>
+									</div>
+									
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4">
+									<tr><td align=center style="height:160px"><img src="pic/s2.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>02/08/2021</td></tr>
+									</table>
+									</div>
+									
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4">
+									<tr><td align=center style="height:160px"><img src="pic/s3.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>03/08/2021</td></tr>
+									</table>
+									
+									</div>
+									
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4">
+									<tr><td align=center style="height:160px"><img src="pic/s4.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>04/08/2021</td></tr>
+									</table>
+									</div>
+									</div>
+									
+									</div>
+									<div class="carousel-item">
+									 <!-- <img src="img/s2.jpg" class="img-fluid">-->
+									 
+									 <div class="row">
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4" >
+									<tr><td align=center style="height:160px"><img src="pic/s5.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>01/08/2021</td></tr>
+									</table>
+									</div>
+									
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4">
+									<tr><td align=center style="height:160px"><img src="pic/s6.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>02/08/2021</td></tr>
+									</table>
+									</div>
+									
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4">
+									<tr><td align=center style="height:160px"><img src="pic/s7.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>03/08/2021</td></tr>
+									</table>
+									
+									</div>
+									
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4">
+									<tr><td align=center style="height:160px"><img src="pic/s8.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>04/08/2021</td></tr>
+									</table>
+									</div>
+									</div>
+									 
+									</div>
+									
+								  </div>
+
+								
+								</div>
+				  
+				  </div>
+				  
+				  <!-- End sports -->
+				  
+				  
+				  
+				  
+				  <!-- music-->
+			    <div class="col-sm-12" style="background-color:#f5f5f5; margin-top:10px">
+				  <h2>Music</h2>
+				  </div>
+				  
+				  <div class="col-sm-12">
+				  
+				   <div id="music" class="carousel slide" data-ride="carousel">
+
+								  <!-- Indicators 
+								  <ul class="carousel-indicators">
+									<li data-target="#sports" data-slide-to="0" class="active"></li>
+									<li data-target="#sports" data-slide-to="1"></li>
+									<li data-target="#sports" data-slide-to="2"></li>
+									<li data-target="#sports" data-slide-to="3"></li>
+								  </ul> -->
+
+								  <!-- The slideshow -->
+								  <div class="carousel-inner">
+									<div class="carousel-item active">
+									<div class="row">
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4" >
+									<tr><td align=center style="height:160px"><img src="pic/m1.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>01/08/2021</td></tr>
+									</table>
+									</div>
+									
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4">
+									<tr><td align=center style="height:160px"><img src="pic/m2.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>02/08/2021</td></tr>
+									</table>
+									</div>
+									
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4">
+									<tr><td align=center style="height:160px"><img src="pic/m3.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>03/08/2021</td></tr>
+									</table>
+									
+									</div>
+									
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4">
+									<tr><td align=center style="height:160px"><img src="pic/m4.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>04/08/2021</td></tr>
+									</table>
+									</div>
+									</div>
+									
+									</div>
+									<div class="carousel-item">
+									 <!-- <img src="img/s2.jpg" class="img-fluid">-->
+									 
+									 <div class="row">
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4" >
+									<tr><td align=center style="height:160px"><img src="pic/m5.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>01/08/2021</td></tr>
+									</table>
+									</div>
+									
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4">
+									<tr><td align=center style="height:160px"><img src="pic/m6.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>02/08/2021</td></tr>
+									</table>
+									</div>
+									
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4">
+									<tr><td align=center style="height:160px"><img src="pic/m7.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>03/08/2021</td></tr>
+									</table>
+									
+									</div>
+									
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4">
+									<tr><td align=center style="height:160px"><img src="pic/m8.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>04/08/2021</td></tr>
+									</table>
+									</div>
+									</div>
+									 
+									</div>
+									
+								  </div>
+
+								
+								</div>
+				  
+				  </div>
+				  
+				  <!--End music-->
+				  
+				  
+				  <!-- movies-->
+			    <div class="col-sm-12" style="background-color:#f5f5f5; margin-top:10px">
+				  <h2>Movies</h2>
+				  </div>
+				  
+				  <div class="col-sm-12">
+				  
+				   <div id="movies" class="carousel slide" data-ride="carousel">
+
+								  <!-- Indicators 
+								  <ul class="carousel-indicators">
+									<li data-target="#sports" data-slide-to="0" class="active"></li>
+									<li data-target="#sports" data-slide-to="1"></li>
+									<li data-target="#sports" data-slide-to="2"></li>
+									<li data-target="#sports" data-slide-to="3"></li>
+								  </ul> -->
+
+								  <!-- The slideshow -->
+								  <div class="carousel-inner">
+									<div class="carousel-item active">
+									<div class="row">
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4" >
+									<tr><td align=center style="height:160px"><img src="pic/p1.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>01/08/2021</td></tr>
+									</table>
+									</div>
+									
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4">
+									<tr><td align=center style="height:160px"><img src="pic/p2.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>02/08/2021</td></tr>
+									</table>
+									</div>
+									
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4">
+									<tr><td align=center style="height:160px"><img src="pic/p3.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>03/08/2021</td></tr>
+									</table>
+									
+									</div>
+									
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4">
+									<tr><td align=center style="height:160px"><img src="pic/p4.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>04/08/2021</td></tr>
+									</table>
+									</div>
+									</div>
+									
+									</div>
+									<div class="carousel-item">
+									 <!-- <img src="img/s2.jpg" class="img-fluid">-->
+									 
+									 <div class="row">
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4" >
+									<tr><td align=center style="height:160px"><img src="pic/p5.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>01/08/2021</td></tr>
+									</table>
+									</div>
+									
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4">
+									<tr><td align=center style="height:160px"><img src="pic/p6.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>02/08/2021</td></tr>
+									</table>
+									</div>
+									
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4">
+									<tr><td align=center style="height:160px"><img src="pic/p7.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>03/08/2021</td></tr>
+									</table>
+									
+									</div>
+									
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4">
+									<tr><td align=center style="height:160px"><img src="pic/p8.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>04/08/2021</td></tr>
+									</table>
+									</div>
+									</div>
+									 
+									</div>
+									
+								  </div>
+
+								
+								</div>
+				  
+				  </div>
+				  
+				  <!-- End movies -->
+				  
+				  
+				    <!-- coding-->
+			    <div class="col-sm-12" style="background-color:#f5f5f5; margin-top:10px">
+				  <h2>Coding</h2>
+				  </div>
+				  
+				  <div class="col-sm-12">
+				  
+				   <div id="coding" class="carousel slide" data-ride="carousel">
+
+								  <!-- Indicators 
+								  <ul class="carousel-indicators">
+									<li data-target="#sports" data-slide-to="0" class="active"></li>
+									<li data-target="#sports" data-slide-to="1"></li>
+									<li data-target="#sports" data-slide-to="2"></li>
+									<li data-target="#sports" data-slide-to="3"></li>
+								  </ul> -->
+
+								  <!-- The slideshow -->
+								  <div class="carousel-inner">
+									<div class="carousel-item active">
+									<div class="row">
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4" >
+									
+									<tr><td align=center style="height:160px"><img src="pic/code1.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>01/08/2021</td></tr>
+									</table>
+									</div>
+									
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4">
+									<tr><td align=center style="height:160px"><img src="pic/code2.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>02/08/2021</td></tr>
+									</table>
+									</div>
+									
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4">
+									<tr><td align=center style="height:160px"><img src="pic/code3.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>03/08/2021</td></tr>
+									</table>
+									
+									</div>
+									
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4">
+									<tr><td align=center style="height:160px"><img src="pic/code4.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>04/08/2021</td></tr>
+									</table>
+									</div>
+									</div>
+									
+									</div>
+									<div class="carousel-item">
+									 <!-- <img src="img/s2.jpg" class="img-fluid">-->
+									 
+									 <div class="row">
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4" >
+									<tr><td align=center style="height:160px"><img src="pic/code5.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>01/08/2021</td></tr>
+									</table>
+									</div>
+									
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4">
+									<tr><td align=center style="height:160px"><img src="pic/code6.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>02/08/2021</td></tr>
+									</table>
+									</div>
+									
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4">
+									<tr><td align=center style="height:160px"><img src="pic/code7.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>03/08/2021</td></tr>
+									</table>
+									
+									</div>
+									
+									<div class="col-sm-3">
+									<table class="table table-borderless w3-card-4">
+									<tr><td align=center style="height:160px"><img src="pic/code8.jpg" class="img-fluid"></td></tr>
+									<tr><td>Title here<i class="fa fa-heart" style="float:right"></i><br>04/08/2021</td></tr>
+									 </table>
+									</div>
+							  </div>
+							</div>
+						 </div>
+					</div>
+				  </div>
+				  
+				  <!-- End coding -->
+				  
+				  </div>
+			  </div>
+			  <!-- End Content block-->
+		 
+		 <div class="col-sm-12" style="background-color:#f2f2f2">
+		       <br> 
+			        <center>Design & Developed By : KRISHAN </center>
+			   <br>
+		 </div>
+		 
+		 </div>
+		 
+		</div>
+		<!--End main block -->
+		</div>
+	   </div>
+	  </div>
